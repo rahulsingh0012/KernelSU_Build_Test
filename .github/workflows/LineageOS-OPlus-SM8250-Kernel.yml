@@ -1,4 +1,4 @@
-name: Build LineageOS OPlus SM8250 Kernel
+name: Build OPlus SM8250 Kernel
 
 on:
   workflow_dispatch:
@@ -65,7 +65,7 @@ jobs:
     - name: Download kernel source
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone --recursive https://github.com/engstk/op8.git --depth=1
+        git clone --recursive https://github.com/bojantanasic/android_kernel_oneplus_sm8250.git --depth=1
 
     - name: Set up rsuntk KernelSU
       run: |
